@@ -1,0 +1,9 @@
+.banner{
+	background-image:url("../../img/banner.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:50px;
+	color:white;
+font-size:1.75rem;
+padding:10px 20px;
+}

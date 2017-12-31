@@ -1,0 +1,62 @@
+@mixin main-display-content-at-Medium{
+	@media (min-width:1050px){
+		display:block;
+		
+	}
+}
+@mixin navBar{
+	@media (min-width:992px){
+		display:block;
+	}
+}
+@mixin searchBar{
+	@media (min-width:992px){
+		display:none;
+	}
+}
+@mixin xsSmallSpace{
+	@media (min-width:992px){
+	padding:40px 0 0 0;
+	}
+}
+@mixin imgStandardSize{
+	@media (min-width:992px){
+	min-width:200px
+	}
+}
+@mixin xsButton{
+	@media (min-width:600px){
+		padding:10px 30px;
+		font-size:1.7rem;
+	}
+}
+@mixin footerInput{
+@media (min-width:800px){
+	background-color:#262626;
+		color:white;
+		border:none;
+		padding:15px 100px 15px 15px;
+	margin-left:50px;
+	width:300px;
+
+			
+}	
+}
+@mixin footerInputDiv{
+@media (min-width:800px){
+	padding:0;
+	
+
+			margin-top:-20px;
+}	
+}
+@mixin mkpSmaller{
+	@media (min-width:370px){
+		font-size:1.25rem;
+	}
+}
+@mixin footer-Input-largeSize{
+	@media (min-width:992px){
+		margin-top:65px;
+	}
+}

@@ -1,0 +1,39 @@
+.main-display-image{
+	
+position:relative;
+	
+
+	&_position{
+		position:absolute; 
+				top:10px;
+		left:10px;
+		
+
+	}
+	&_content{
+	display:none;
+		background-color:$lightGray;
+		padding:20px;
+		max-width:41rem;
+	@include main-display-content-at-Medium;
+		
+		
+		
+	}
+	&_header{
+		
+display:none;
+		width:75%;
+		font-size:3.8rem;
+		font-weight:100;
+		font-family: EMprintLight;
+			@include main-display-content-at-Medium;
+	}
+	&_p{
+		display:none;
+
+		margin-top:1.25rem;
+		font-size:1.5rem;
+					@include main-display-content-at-Medium;
+	}
+}

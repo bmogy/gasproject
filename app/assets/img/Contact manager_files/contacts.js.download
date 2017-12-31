@@ -1,0 +1,50 @@
+/* 
+Activity: Contact manager
+*/
+
+// TODO: Complete the program\\
+
+
+
+console.log("Welcome to your contact manager!"); 
+var names = {
+init:function(firstName,lastName){
+this.firstName =firstName; 
+this.lastName = lastName; 	
+     }, 
+	 listOfCOntacts:function(){
+		 console.log("last name: " + this.lastName + ", first name: " + this.firstName); 
+	 }
+	 
+}
+var personOne = Object.create(names); 
+personOne.init("Brian", "Mogy");
+var personTwo =Object.create(names); 
+personTwo.init("Sarah", "Wilson"); 
+
+
+var listOfItems= ["1: List contacts","2: Add a contact", "3: Quit"];  
+for (var i =0; i<listOfItems.length;i++){
+	console.log(listOfItems[i]);
+}
+ var promptList = prompt("Please select an item");  
+if(Number(promptList) ===1){
+	console.log("Hers's the list of your contacts:");
+	var arrayOfContacts = [personOne.listOfCOntacts(), personTwo.listOfCOntacts()];
+		for(var i = 0;i<arrayOfContacts.length;i++){
+			arrayOfContacts[i]; 
+		
+		}
+	
+}
+function a(name,price){
+this.name =name;
+this.price =price; 	
+}
+var b = new a("Brian",33.50);
+b.prototype.init=function(name,price,age){
+	this.a(name,price); 
+	this.age=age; 
+}
+var c = new b("Dave",12,13); 
+console.log(c.name);

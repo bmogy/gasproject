@@ -1,0 +1,97 @@
+.nav{
+	
+	box-sizing:border-box;
+	text-align:center;
+	margin:0; 
+	padding:0;
+		
+	&-list{
+		
+		
+	display:none;
+	@include navBar; 
+		height:100%; 
+		min-width:57px;
+		padding:25px 15px 0;
+	
+	
+		ul{
+			padding:0;
+			text-align:center;
+		
+		}
+		li{
+			display:table-cell;
+			float:none; 
+			padding-bottom:0; 
+			padding:20px;
+			vertical-align:middle;
+				
+		
+			
+		}
+		li:hover{
+			background-color:$lightGray; 
+			border-top:3px solid $darkBlue;
+			padding-top:17px;
+		}
+		a{
+			color:black;
+			text-decoration:none;
+	
+			font-size:1.75rem;
+		}
+			&-is-visable{
+				background-color:$lightGray;
+			
+		display:inline-block;
+			
+			ul{
+				margin:0; 
+				padding:0; 
+			
+			
+					
+			}
+			li{
+				display:inline-block;
+				padding:0;
+		
+	
+				padding:20px;
+				float:none;
+				
+			}
+			li:hover{
+				background-color:white;
+			}
+			a{
+				font-size:1.75rem;
+				
+			}
+		}
+		
+	}
+	&-img{
+		vertical-align:middle;
+		width:100%;
+		padding:30px;
+	@include imgStandardSize;
+	}
+
+
+}
+.navBar{
+	position:absolute; 
+	padding:20px;
+	font-size:3rem;
+	
+top:0;
+	right:0;
+	@include searchBar;
+	&-menuContent{
+		display:none;
+	}
+}
+
+/*<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>*/ 

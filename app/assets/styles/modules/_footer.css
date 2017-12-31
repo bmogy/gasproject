@@ -1,0 +1,48 @@
+.footer{
+height:150px;
+	background-color:$lightBlack;
+
+	
+	&-internal-distance{
+		margin:50px 0;
+		height:0;
+		
+	}
+	&-links{
+		height:0;
+		ul{
+			position:relative; 
+			
+		}
+		li{
+			float:left;
+			margin-right:20px;
+		}
+		a{
+			color:#DEDED9;
+		}
+	}
+	&-div-input{
+		height:0;
+		padding:50px;
+		@include footerInputDiv;
+	}
+	&-input{
+	height:0;
+		background-color:#262626;
+		color:white;
+		border:none;
+			padding:15px 100px 15px 15px;
+		
+	max-width:300px;
+min-width:100px;
+margin:0;	
+text-align:center;
+			
+			@include footerInput; 
+			@include footer-Input-largeSize;
+		
+	}
+
+
+}

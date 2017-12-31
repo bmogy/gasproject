@@ -1,0 +1,14 @@
+body{
+	width:100%; 
+	box-sizing:border-box;
+	background-color:$lightGray;
+}
+img{
+	width:100%; 
+}
+.container-fluid{
+	background-color:white;
+	max-width:1418px;
+border:1px solid blue;
+border-bottom:none;
+}
